@@ -27,8 +27,7 @@ bootlfile="$rpifwbdir/boot/bootcode.bin"
 # download rpi-fw sources
 [ -s "$rpifwtfile" ] || (
   printf "%s" "Downloading latest rpi-fw sources.. "
-  curl --silent --location --output "$rpifwtfile" "$rpifwurl"
-  printf "%s\n" ""
+  curl --silent --location --output "$rpifwtfile" "$rpifwurl" && printf "%s\n" ""
 )
 
 # check rpi-fw dir
