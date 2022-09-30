@@ -352,8 +352,7 @@ uboot_build_stage2() (
   uboot_make clean
   printf "%s\n" ""
   printf "%s" "Recompiling.. "
-  uboot_make EXT_DTB="$ubootcdtb"
-  printf "%s\n" ""
+  uboot_make EXT_DTB="$ubootcdtb" && printf "%s\n" ""
 )
 
 build_uboot() ( uboot_build_stage1 && uboot_build_stage2 )
