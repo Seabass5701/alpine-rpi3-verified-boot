@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-# vim: set ts=2 sw=2:
 
 
 # This is a script to obtain the latest armtf sources
